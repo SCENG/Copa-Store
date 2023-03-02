@@ -1,5 +1,10 @@
 import React from "react";
+import { Navbar } from "../components/navbar";
 
 export const Contact = () => {
-  return <div>contact</div>;
+  return 
+  <>
+    <Navbar />
+    <p>Contact</p>
+  </>
 };
