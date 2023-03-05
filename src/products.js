@@ -1,11 +1,4 @@
-import product1 from "./assets/products/1.png";
-import product2 from "./assets/products/2.png";
-import product3 from "./assets/products/3.png";
-import product4 from "./assets/products/4.png";
-import product5 from "./assets/products/5.png";
 import product6 from "./assets/products/6.webp";
-import product7 from "./assets/products/7.webp";
-import product8 from "./assets/products/8.webp";
 
 
 
@@ -125,31 +118,31 @@ export const PRODUCTS = [
     productImage: perfume,
   },
   {
-    id: 9,
+    id: 11,
     productName: "NIKE",
     price: 240.0,
     productImage: sports_6,
   },
   {
-    id: 9,
+    id: 12,
     productName: "SHIRT",
     price: 40.0,
     productImage: shirt_1,
   },
   {
-    id: 10,
+    id: 13,
     productName: "SHAMPOO",
     price: 40.0,
     productImage: shampoo,
   },
   {
-    id: 9,
+    id: 14,
     productName: "APPLE WATCH",
     price: 700.0,
     productImage: watch_1,
   },
   {
-    id: 9,
+    id: 15,
     productName: "RUNNERS",
     price: 230.0,
     productImage: sports_1,
