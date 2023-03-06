@@ -9,11 +9,21 @@ import { Navbar } from "./components/navbar";
 import { Shop } from "./pages/shop/shop";
 import { Contact } from "./pages/contact/contact";
 import { Cart } from "./pages/cart/cart";
+import { About } from "./pages/about/about";
 import { ShopContextProvider } from "./context/shop-context";
 
 const router = createBrowserRouter([
   {
     path: "/",
+    element: (
+      <>
+        <Navbar />
+        <Shop />
+      </>
+    ),
+  },
+  {
+    path: "/shop",
     element: (
       <>
         <Navbar />
@@ -28,6 +38,10 @@ const router = createBrowserRouter([
   {
     path: "/cart",
     element: <Cart />,
+  },
+  {
+    path: "/about",
+    element: <About />,
   },
   ]);
 

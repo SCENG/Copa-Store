@@ -25,10 +25,12 @@ export const ShopContextProvider = (props) => {
     return totalAmount;
   };
 
+  // this funtion adds item to cart and on the cart page it will show the number of items in the cart
   const addToCart = (itemId) => {
     setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] + 1 }));
   };
 
+  // this function removes item from cart and on the cart page it will show the number of items in the cart
   const removeFromCart = (itemId) => {
     setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] - 1 }));
   };
