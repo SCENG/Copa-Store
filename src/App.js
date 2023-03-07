@@ -8,7 +8,7 @@ import {
 } from "react-router-dom";
 import { Navbar } from "./components/navbar";
 import { Shop } from "./pages/shop/shop";
-import { Contact } from "./pages/contact/contact";
+import Contact from "./pages/contact/contact";
 import { Cart } from "./pages/cart/cart";
 import { About } from "./pages/about/about";
 import { ShopContextProvider } from "./context/shop-context";

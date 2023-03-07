@@ -4,7 +4,7 @@ import { PRODUCTS } from "../../products";
 import { CartItem } from "./cart-item";
 import { useNavigate } from "react-router-dom";
 import { Navbar } from "../../components/navbar";
-import "./cart.css";
+import "./cart.scss";
 
 export const Cart = () => {
   const { cartItems, getTotalCartAmount, checkout } = useContext(ShopContext);
