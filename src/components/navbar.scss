@@ -1,4 +1,4 @@
-.app__navbar {
+.app_navbar {
   width: 100%;
 
   display: flex;
@@ -15,7 +15,7 @@
   z-index: 2;
 }
 
-.app__navbar-logo {
+.app_navbar-logo {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -31,7 +31,7 @@
   }
 }
 
-.app__navbar-links {
+.app_navbar-links {
   flex: 1;
   display: flex;
   justify-content: center;
@@ -81,7 +81,7 @@
   }
 }
 
-.app__navbar-menu {
+.app_navbar-menu {
   width: 35px;
   height: 35px;
   border-radius: 50%;

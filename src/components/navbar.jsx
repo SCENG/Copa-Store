@@ -7,15 +7,15 @@ import "./navbar.scss";
 export const Navbar = () => {
   const [ toggle, setToggle ] = useState(false)
   const menuName = ['Shop', 'Contact', 'About', <ShoppingCart className="cart " size={30} />]
-  const menuLink = ['shop', 'contact', 'about', 'cart']
+  const menuLink = ['', 'contact', 'about', 'cart']
   console.log(menuLink.length)
 
   return (
-    <nav className="app__navbar">
-      <div className="app__navbar-logo">
+    <nav className="app_navbar">
+      <div className="app_navbar-logo">
         {/* <img src={images.elijah} alt="logo" /> */}
       </div>
-      <ul className="app__navbar-links"> 
+      <ul className="app_navbar-links"> 
       {
         ['Shop', 'Contact', 'About', <ShoppingCart className="cart" size={30}/>].map((item, link) => (
           <li key={item}>
@@ -27,7 +27,7 @@ export const Navbar = () => {
       }
       </ul>
 
-      <div className="app__navbar-menu">
+      <div className="app_navbar-menu">
         <List onClick={() => setToggle(true)} />
 
         {toggle && (
@@ -51,53 +51,5 @@ export const Navbar = () => {
         )}
       </div>
     </nav>
-
-
-
-
-
-
-    // <div className={Toggle ? "nav__menu show-menu" : "nav__menu"}>
-    //   <ul className="nav__list grid">
-    //     <li className="nav__item ">
-    //       <Link to="/" className="nav__link active-link">
-    //         <Storefront className="uil uil-estate nav__icon"/> Shop
-    //       </Link>
-    //     </li>
-
-    //     <li className="nav__item ">
-    //       <Link to="/contact" className="nav__link">
-    //         <Envelope className="uil uil-file-alt nav__icon"/> Contact
-    //       </Link>
-    //     </li>
-
-    //     <li className="nav__item ">
-    //       <Link to="/about" className="nav__link">
-    //         <Files className=" nav__icon"/> About
-    //       </Link>
-    //     </li>
-
-    //     <li className="nav__item ">
-    //       <Link to="/cart" className="nav__link">
-    //         <ShoppingCart className="cart " size={30} />
-    //       </Link>
-    //     </li>
-    //   </ul>
-
-    //   <X className=" nav__close" onClick={() => showMenu(!Toggle)}/>
-    // </div>
-
-    // <div className="navbar">
-    //   <div className="links">
-    //     <Link to="/"> Shop </Link>
-    //     <Link to="/contact">
-    //       <AddressBook className="adddress icon" size={32} /> Contact
-    //     </Link>
-    //     <Link to="/about"> About </Link>
-    //     <Link to="/cart">
-    //       <ShoppingCart className="cart " size={30} />
-    //     </Link>
-    //   </div>
-    // </div>
   );
 };

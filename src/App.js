@@ -1,4 +1,5 @@
-import "./App.css";
+import "./App.scss";
+import "./index.css"
 import {
   createBrowserRouter,
   RouterProvider,
@@ -15,15 +16,6 @@ import { ShopContextProvider } from "./context/shop-context";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: (
-      <>
-        <Navbar />
-        <Shop />
-      </>
-    ),
-  },
-  {
-    path: "/shop",
     element: (
       <>
         <Navbar />
